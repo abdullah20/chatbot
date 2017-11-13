@@ -14,7 +14,7 @@ $input = json_decode(file_get_contents('php://input'), true);
 $userID = $input['entry'][0]['messaging'][0]['sender']['id'];
 $message = $input['entry'][0]['messaging'][0]['message']['text'];
 
-$url = "https://graph.facebook.con/v2.6/me/messages?access_token=$accessToken";
+$url = "https://graph.facebook.com/v2.6/me/messages?access_token=$accessToken";
 $jsonDate = "{
   'recipient': {
     'id': $userID
