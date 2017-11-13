@@ -7,5 +7,3 @@ if(isset($_REQUEST['hub_challenge'])) {
 if($token == "token123") {
   echo $challenge;
 }
-
-?>
