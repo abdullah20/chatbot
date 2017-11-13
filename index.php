@@ -29,7 +29,7 @@ curl_setopt($ch, CURLOPT_POST, true);
 curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonDate);
 curl_setopt($ch, CURLOPT_HTTPHEADER, ['content-Type: application/json']);
 
-if("abdullah" = $input['entry'][0]['messaging'][0]['message']['text']){
+if("abdullah" == $input['entry'][0]['messaging'][0]['message']['text']){
 curl_exec($ch);
 }
 
