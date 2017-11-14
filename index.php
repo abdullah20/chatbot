@@ -30,7 +30,7 @@ if(!empty($input['entry'][0]['messaging'][0]['message'])){
   else if($i==3){
   $rep='what subject you need help with';
   }
-}
+
 
    
 $jsonDate = "{
