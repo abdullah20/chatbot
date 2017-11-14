@@ -17,8 +17,8 @@ $message = $input['entry'][0]['messaging'][0]['message']['text'];
 $url = "https://graph.facebook.com/v2.6/me/messages?access_token=$accessToken";
 
 
-  
-  $rep="welcome";
+ 
+  $rep="welcome,ill try to help you, please tell me in which subject you are facing problem";
      
 $jsonDate = "{
   'recipient': {
