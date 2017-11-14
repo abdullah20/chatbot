@@ -28,9 +28,9 @@ $ch = curl_init($url);
 curl_setopt($ch, CURLOPT_POST, true);
 curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonDate);
 curl_setopt($ch, CURLOPT_HTTPHEADER, ['content-Type: application/json']);
-
+$rep='welcome';
 if(!empty($input['entry'][0]['messaging'][0]['message'])){
- $rep='welcome';
+ 
   curl_exec($ch);
   
 
