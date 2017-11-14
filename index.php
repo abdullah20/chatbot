@@ -37,6 +37,7 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, ['content-Type: application/json']);
 if(!empty($input['entry'][0]['messaging'][0]['message'])){
  
   curl_exec($ch);
+  $rep="im looking for what you need ";
   
 
 }
