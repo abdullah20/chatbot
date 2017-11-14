@@ -18,14 +18,14 @@ $url = "https://graph.facebook.com/v2.6/me/messages?access_token=$accessToken";
 
 
   
-  $rep='welcome';
+  $rep="welcome";
      
 $jsonDate = "{
   'recipient': {
     'id': $userID
   },
   'message': {
-    'text': 'abdu'
+    'text': '"$rep"'
   }
   }";
 $ch = curl_init($url);
