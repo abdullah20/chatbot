@@ -49,6 +49,6 @@ if(!empty($input['entry'][0]['messaging'][0]['message'])){
     if(!empty($input['entry'][0]['messaging'][0]['message'])) {break;}
 }
 
-}
+}}
 
 ?>
