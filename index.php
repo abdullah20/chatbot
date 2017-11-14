@@ -30,25 +30,10 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonDate);
 curl_setopt($ch, CURLOPT_HTTPHEADER, ['content-Type: application/json']);
 
 if(!empty($input['entry'][0]['messaging'][0]['message'])){
-  for($i = 0; $i <= 3; $i = 1)
-{ switch ($i) { 
-    case '0': 
-    $rep='welcome';
-    curl_exec($ch);
-    if(!empty($input['entry'][0]['messaging'][0]['message'])) {break;}
-    case '1':
-    $rep='which city do you live?';
-    curl_exec($ch);
-    if(!empty($input['entry'][0]['messaging'][0]['message'])) {break;}
-    case '2':
-     $rep='what subject you need help with?';
-    curl_exec($ch);
-    if(!empty($input['entry'][0]['messaging'][0]['message'])) {break;}
-    case '3':
-     $rep='we will search for a teacher to help you soon';
-    if(!empty($input['entry'][0]['messaging'][0]['message'])) {break;}
-}
+ $rep='welcome';
+  curl_exec($ch);
+  
 
-}}
+}
 
 ?>
