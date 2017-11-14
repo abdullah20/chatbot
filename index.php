@@ -25,7 +25,7 @@ $jsonDate = "{
     'id': $userID
   },
   'message': {
-    'text': $rep
+    'text': 'abdu'
   }
   }";
 $ch = curl_init($url);
